@@ -2,7 +2,12 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
   <meta name="theme-color" content="#070909">
 
   <title>SELFLO · Digital Bartender</title>
@@ -30,11 +35,19 @@
     body {
       margin: 0;
       background:
-        radial-gradient(circle at top, #102326 0%, #070909 35%);
+        radial-gradient(
+          circle at top,
+          #102326 0%,
+          #070909 35%
+        );
       color: var(--white);
       font-family:
-        Inter, system-ui, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", sans-serif;
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
       line-height: 1.5;
     }
 
@@ -56,11 +69,11 @@
     }
 
     .brand {
+      margin: 0;
+      color: var(--white);
       font-size: clamp(42px, 14vw, 72px);
       font-weight: 900;
       letter-spacing: 0.16em;
-      color: var(--white);
-      margin: 0;
     }
 
     .brand-o {
@@ -82,8 +95,8 @@
     }
 
     .hero p {
-      margin: 0 auto;
       max-width: 520px;
+      margin: 0 auto;
       color: var(--muted);
       font-size: 18px;
     }
@@ -99,15 +112,17 @@
 
     .arrow {
       display: block;
-      font-size: 26px;
       margin-top: 8px;
+      font-size: 26px;
       animation: bounce 1.8s infinite;
     }
 
     @keyframes bounce {
-      0%, 100% {
+      0%,
+      100% {
         transform: translateY(0);
       }
+
       50% {
         transform: translateY(7px);
       }
@@ -120,11 +135,11 @@
     }
 
     .section-label {
+      margin-bottom: 12px;
       color: var(--cyan);
       font-size: 12px;
       font-weight: 800;
       letter-spacing: 0.18em;
-      margin-bottom: 12px;
     }
 
     h2 {
@@ -141,25 +156,25 @@
     }
 
     .step {
-      background: var(--card);
-      border: 1px solid var(--cyan-dark);
-      border-radius: 18px;
-      padding: 22px;
       display: grid;
       grid-template-columns: 52px 1fr;
       gap: 16px;
       align-items: start;
+      padding: 22px;
+      background: var(--card);
+      border: 1px solid var(--cyan-dark);
+      border-radius: 18px;
     }
 
     .number {
+      display: grid;
       width: 46px;
       height: 46px;
-      border-radius: 50%;
-      border: 2px solid var(--cyan);
-      color: var(--cyan);
-      display: grid;
       place-items: center;
+      color: var(--cyan);
       font-weight: 900;
+      border: 2px solid var(--cyan);
+      border-radius: 50%;
     }
 
     .step h3 {
@@ -173,68 +188,33 @@
       font-size: 15px;
     }
 
-    /* DEMO */
+    /* AW DEMO */
 
     .demo {
       text-align: center;
       background:
-        linear-gradient(180deg, #081011 0%, #0b1617 100%);
-    }
-
-    .beer-glass {
-      position: relative;
-      width: 125px;
-      height: 210px;
-      margin: 38px auto 28px;
-      border: 5px solid rgba(244,247,247,.88);
-      border-top-width: 3px;
-      border-radius: 9px 9px 26px 26px;
-      overflow: hidden;
-      box-shadow:
-        0 0 34px rgba(22,217,243,.08);
-    }
-
-    .beer {
-      position: absolute;
-      left: 6px;
-      right: 6px;
-      bottom: 6px;
-      height: 72%;
-      border-radius: 4px 4px 17px 17px;
-      background:
         linear-gradient(
           180deg,
-          #ffd862 0%,
-          #e9aa25 25%,
-          #c77a0b 100%
+          #081011 0%,
+          #0b1617 100%
         );
     }
 
-    .foam {
-      position: absolute;
-      left: 6px;
-      right: 6px;
-      bottom: 68%;
-      height: 30px;
-      background: #fff5d8;
-      border-radius: 48% 52% 35% 42%;
-      z-index: 2;
-    }
-
-    .shine {
-      position: absolute;
-      top: 28px;
-      left: 18px;
-      width: 10px;
-      height: 115px;
-      border-radius: 10px;
-      background: rgba(255,255,255,.28);
-      z-index: 3;
+    .aw-image {
+      display: block;
+      width: min(100%, 520px);
+      height: auto;
+      margin: 38px auto 28px;
+      border: 1px solid rgba(22, 217, 243, 0.18);
+      border-radius: 22px;
+      box-shadow:
+        0 18px 60px rgba(0, 0, 0, 0.45),
+        0 0 35px rgba(22, 217, 243, 0.08);
     }
 
     .demo h3 {
-      font-size: 28px;
       margin: 0 0 8px;
+      font-size: 28px;
     }
 
     .demo-copy {
@@ -246,14 +226,14 @@
     .flow {
       margin-top: 34px;
       color: var(--white);
-      font-weight: 800;
       font-size: 13px;
-      letter-spacing: .08em;
+      font-weight: 800;
+      letter-spacing: 0.08em;
     }
 
     .flow span {
-      color: var(--cyan);
       margin: 0 4px;
+      color: var(--cyan);
     }
 
     /* WHY */
@@ -290,13 +270,13 @@
     }
 
     .quote {
+      margin-bottom: 26px;
+      padding-left: 20px;
       color: var(--white);
       font-size: clamp(24px, 7vw, 34px);
       font-weight: 800;
       line-height: 1.25;
-      padding-left: 20px;
       border-left: 4px solid var(--cyan);
-      margin-bottom: 26px;
     }
 
     .origin p {
@@ -305,21 +285,29 @@
 
     /* TECH */
 
+    .tech-intro {
+      color: var(--muted);
+    }
+
     .tech-flow {
       margin-top: 35px;
       padding: 28px 20px;
+      background: #080c0d;
       border: 1px solid var(--cyan-dark);
       border-radius: 18px;
-      background: #080c0d;
       text-align: center;
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-family:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        monospace;
       font-size: 14px;
       line-height: 2;
     }
 
     .tech-flow .down {
-      color: var(--cyan);
       display: block;
+      color: var(--cyan);
     }
 
     /* CTA */
@@ -327,9 +315,13 @@
     .cta {
       padding-top: 90px;
       padding-bottom: 90px;
-      text-align: center;
       background:
-        radial-gradient(circle at center, #14363b 0%, #070909 55%);
+        radial-gradient(
+          circle at center,
+          #14363b 0%,
+          #070909 55%
+        );
+      text-align: center;
     }
 
     .cta h2 {
@@ -337,32 +329,34 @@
     }
 
     .cta p {
-      color: var(--muted);
       max-width: 520px;
       margin: auto;
+      color: var(--muted);
     }
 
     .cta-tags {
       margin-top: 26px;
       color: var(--cyan);
       font-weight: 700;
-      letter-spacing: .08em;
+      letter-spacing: 0.08em;
     }
 
     /* FOOTER */
 
     footer {
-      text-align: center;
       padding: 35px 20px 45px;
       color: #5f7477;
       font-size: 12px;
-      letter-spacing: .08em;
+      letter-spacing: 0.08em;
+      text-align: center;
     }
+
+    /* DESKTOP */
 
     @media (min-width: 650px) {
       section {
-        padding-left: 40px;
         padding-right: 40px;
+        padding-left: 40px;
       }
 
       .steps {
@@ -374,241 +368,345 @@
 
 <body>
 
-<div class="page">
+  <div class="page">
 
-  <!-- HERO -->
+    <!-- HERO -->
 
-  <header class="hero">
-    <div class="eyebrow">DIGITAL BARTENDER</div>
+    <header class="hero">
 
-    <div class="brand">
-      SELFL<span class="brand-o">O</span>
-    </div>
+      <div class="eyebrow">
+        DIGITAL BARTENDER
+      </div>
 
-    <h1>Snabbare servering.<br>Kortare köer.</h1>
+      <div class="brand">
+        SELFL<span class="brand-o">O</span>
+      </div>
 
-    <p>
-      En digital självbetjäningsupplevelse från val och betalning
-      till färdig dryck.
-    </p>
+      <h1>
+        Snabbare servering.<br>
+        Kortare köer.
+      </h1>
 
-    <a class="discover" href="#how">
-      UPPTÄCK SELFLO
-      <span class="arrow">↓</span>
-    </a>
-  </header>
+      <p>
+        En digital självbetjäningsupplevelse från val och betalning
+        till färdig dryck.
+      </p>
+
+      <a class="discover" href="#how">
+        UPPTÄCK SELFLO
+        <span class="arrow">↓</span>
+      </a>
+
+    </header>
 
 
-  <!-- HOW -->
+    <!-- HOW -->
 
-  <section id="how">
-    <div class="section-label">SÅ FUNGERAR DET</div>
-    <h2>Fyra steg.<br>Sedan skål.</h2>
+    <section id="how">
 
-    <div class="steps">
+      <div class="section-label">
+        SÅ FUNGERAR DET
+      </div>
 
-      <div class="step">
-        <div class="number">1</div>
-        <div>
-          <h3>Välj</h3>
-          <p>Välj 25, 33 eller 50 Cl direkt på SELFLO-skärmen.</p>
+      <h2>
+        Fyra steg.<br>
+        Sedan skål.
+      </h2>
+
+      <div class="steps">
+
+        <div class="step">
+
+          <div class="number">
+            1
+          </div>
+
+          <div>
+            <h3>Välj</h3>
+
+            <p>
+              Välj 25, 33 eller 50 cl direkt på SELFLO-skärmen.
+            </p>
+          </div>
+
         </div>
-      </div>
 
-      <div class="step">
-        <div class="number">2</div>
-        <div>
-          <h3>Betala</h3>
-          <p>Skanna Swish QR-koden med mobilen och godkänn betalningen.</p>
+
+        <div class="step">
+
+          <div class="number">
+            2
+          </div>
+
+          <div>
+            <h3>Betala</h3>
+
+            <p>
+              Skanna Swish QR-koden med mobilen och godkänn
+              betalningen.
+            </p>
+          </div>
+
         </div>
-      </div>
 
-      <div class="step">
-        <div class="number">3</div>
-        <div>
-          <h3>Följ tappningen</h3>
-          <p>Se glaset fyllas medan SELFLO tappar vald mängd.</p>
+
+        <div class="step">
+
+          <div class="number">
+            3
+          </div>
+
+          <div>
+            <h3>Följ tappningen</h3>
+
+            <p>
+              Se glaset fyllas medan SELFLO tappar vald mängd.
+            </p>
+          </div>
+
         </div>
-      </div>
 
-      <div class="step">
-        <div class="number">4</div>
-        <div>
-          <h3>Klart</h3>
-          <p>Rätt mängd. Redo att serveras. Skål! 🍺</p>
+
+        <div class="step">
+
+          <div class="number">
+            4
+          </div>
+
+          <div>
+            <h3>Klart</h3>
+
+            <p>
+              Rätt mängd. Redo att serveras. Skål! 🍺
+            </p>
+          </div>
+
         </div>
+
       </div>
 
-    </div>
-  </section>
+    </section>
 
 
-  <!-- AW DEMO -->
+    <!-- AW DEMO -->
 
-  <section class="demo">
+    <section class="demo">
 
-    <div class="section-label">AW DEMO</div>
-
-    <h2>Se tappningen.<br>Inte bara resultatet.</h2>
-
-    <div class="beer-glass">
-      <div class="beer"></div>
-      <div class="foam"></div>
-      <div class="shine"></div>
-    </div>
-
-    <h3>Från Swish till skål.</h3>
-
-    <p class="demo-copy">
-      I demonstrationen följer kunden hela flödet:
-      val, betalning, godkännande, tappning och avslut.
-    </p>
-
-    <div class="flow">
-      VÄLJ
-      <span>→</span>
-      SWISH
-      <span>→</span>
-      PAID
-      <span>→</span>
-      TAPPAR
-      <span>→</span>
-      SKÅL!
-    </div>
-
-  </section>
-
-
-  <!-- WHY -->
-
-  <section>
-
-    <div class="section-label">VARFÖR SELFLO?</div>
-
-    <h2>Byggt för när alla vill beställa samtidigt.</h2>
-
-    <div class="benefits">
-
-      <div class="benefit">
-        <h3>Kortare köer</h3>
-        <p>
-          Fler beställningar kan hanteras utan att varje order
-          behöver passera samma manuella flaskhals.
-        </p>
+      <div class="section-label">
+        AW DEMO
       </div>
 
-      <div class="benefit">
-        <h3>Snabbare peakflöde</h3>
-        <p>
-          SELFLO är tänkt för miljöer där efterfrågan kommer
-          i tydliga och intensiva försäljningstoppar.
-        </p>
+      <h2>
+        Se tappningen.<br>
+        Inte bara resultatet.
+      </h2>
+
+      <img
+        class="aw-image"
+        src="selflo-aw.png"
+        alt="SELFLO Digital Bartender AW Demo"
+      >
+
+      <h3>
+        Från Swish till skål.
+      </h3>
+
+      <p class="demo-copy">
+        I demonstrationen följer kunden hela flödet:
+        val, betalning, godkännande, tappning och avslut.
+      </p>
+
+      <div class="flow">
+        VÄLJ
+        <span>→</span>
+        SWISH
+        <span>→</span>
+        PAID
+        <span>→</span>
+        TAPPAR
+        <span>→</span>
+        SKÅL!
       </div>
 
-      <div class="benefit">
-        <h3>Kontrollerad volym</h3>
-        <p>
-          Vald mängd, betalningsstatus och maskinstyrning
-          kopplas ihop innan tappning tillåts.
-        </p>
+    </section>
+
+
+    <!-- WHY -->
+
+    <section>
+
+      <div class="section-label">
+        VARFÖR SELFLO?
       </div>
 
-      <div class="benefit">
-        <h3>En sammanhängande upplevelse</h3>
-        <p>
-          Val, Swish, tappning och färdig servering sker i
-          samma enkla digitala kundresa.
-        </p>
+      <h2>
+        Byggt för när alla vill beställa samtidigt.
+      </h2>
+
+      <div class="benefits">
+
+        <div class="benefit">
+
+          <h3>
+            Kortare köer
+          </h3>
+
+          <p>
+            Fler beställningar kan hanteras utan att varje order
+            behöver passera samma manuella flaskhals.
+          </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+          <h3>
+            Snabbare peakflöde
+          </h3>
+
+          <p>
+            SELFLO är tänkt för miljöer där efterfrågan kommer
+            i tydliga och intensiva försäljningstoppar.
+          </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+          <h3>
+            Kontrollerad volym
+          </h3>
+
+          <p>
+            Vald mängd, betalningsstatus och maskinstyrning
+            kopplas ihop innan tappning tillåts.
+          </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+          <h3>
+            En sammanhängande upplevelse
+          </h3>
+
+          <p>
+            Val, Swish, tappning och färdig servering sker i
+            samma enkla digitala kundresa.
+          </p>
+
+        </div>
+
       </div>
 
-    </div>
-
-  </section>
+    </section>
 
 
-  <!-- ORIGIN -->
+    <!-- ORIGIN -->
 
-  <section class="origin">
+    <section class="origin">
 
-    <div class="section-label">VARFÖR IDÉN FÖDDES</div>
+      <div class="section-label">
+        VARFÖR IDÉN FÖDDES
+      </div>
 
-    <div class="quote">
-      När kön växer ska kapaciteten kunna växa med den.
-    </div>
+      <div class="quote">
+        När kön växer ska kapaciteten kunna växa med den.
+      </div>
 
-    <p>
-      SELFLO utgår från ett verkligt serveringsproblem:
-      många kunder vill köpa under samma korta tidsfönster,
-      medan traditionell serveringskapacitet lätt blir
-      flaskhalsen.
-    </p>
+      <p>
+        SELFLO utgår från ett verkligt serveringsproblem:
+        många kunder vill köpa under samma korta tidsfönster,
+        medan traditionell serveringskapacitet lätt blir
+        flaskhalsen.
+      </p>
 
-  </section>
-
-
-  <!-- UNDER THE SURFACE -->
-
-  <section>
-
-    <div class="section-label">UNDER YTAN</div>
-
-    <h2>Digital upplevelse.<br>Fysisk kontroll.</h2>
-
-    <p style="color: var(--muted);">
-      SELFLO utvecklas som en kombination av kundgränssnitt,
-      betalningsintegration, maskinstyrning och volymstyrd tappning.
-    </p>
-
-    <div class="tech-flow">
-
-      Kundskärm
-      <span class="down">↓</span>
-
-      Swish
-      <span class="down">↓</span>
-
-      PAID
-      <span class="down">↓</span>
-
-      SELFLO Controller
-      <span class="down">↓</span>
-
-      Volymstyrd tappning
-      <span class="down">↓</span>
-
-      ✓ KLART
-
-    </div>
-
-  </section>
+    </section>
 
 
-  <!-- CTA -->
+    <!-- UNDER THE SURFACE -->
 
-  <section class="cta">
+    <section>
 
-    <div class="section-label">NYFIKEN PÅ SELFLO?</div>
+      <div class="section-label">
+        UNDER YTAN
+      </div>
 
-    <h2>Let's talk.</h2>
+      <h2>
+        Digital upplevelse.<br>
+        Fysisk kontroll.
+      </h2>
 
-    <p>
-      SELFLO utvecklas just nu som en fysisk och digital prototyp.
-      Nästa steg är att testa hur konceptet fungerar i verkliga
-      serveringsmiljöer.
-    </p>
+      <p class="tech-intro">
+        SELFLO utvecklas som en kombination av kundgränssnitt,
+        betalningsintegration, maskinstyrning och volymstyrd
+        tappning.
+      </p>
 
-    <div class="cta-tags">
-      PILOT · ARENA · EVENT · BAR
-    </div>
+      <div class="tech-flow">
 
-  </section>
+        Kundskärm
+
+        <span class="down">↓</span>
+
+        Swish
+
+        <span class="down">↓</span>
+
+        PAID
+
+        <span class="down">↓</span>
+
+        SELFLO Controller
+
+        <span class="down">↓</span>
+
+        Volymstyrd tappning
+
+        <span class="down">↓</span>
+
+        ✓ KLART
+
+      </div>
+
+    </section>
 
 
-  <footer>
-    SELFLO · DIGITAL BARTENDER
-  </footer>
+    <!-- CTA -->
 
-</div>
+    <section class="cta">
+
+      <div class="section-label">
+        NYFIKEN PÅ SELFLO?
+      </div>
+
+      <h2>
+        Let's talk.
+      </h2>
+
+      <p>
+        SELFLO utvecklas just nu som en fysisk och digital prototyp.
+        Nästa steg är att testa hur konceptet fungerar i verkliga
+        serveringsmiljöer.
+      </p>
+
+      <div class="cta-tags">
+        PILOT · ARENA · EVENT · BAR
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+      SELFLO · DIGITAL BARTENDER
+    </footer>
+
+  </div>
 
 </body>
 </html>
